@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftWeb</title>
+    <link rel="stylesheet" href="C:\Users\Juan Carlos\Desktop\Proyecto Coder 1\css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <a href="../index.html">SwiftWeb</a>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="albums.html">Albums</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a> 
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="textSection">
+            <h2 class="textSectionTitle">
+                ¿Te quedan dudas o quieres hablar con nosotros?
+                Completa el formulario y nos pondremos en contacto
+            </h2>
+        </section>
+        <section class="formSection">
+            <article>
+                <form action="#">
+                    <fieldset class="contactForm whiteBackground">
+                        <label for="nombre" class="formLabel">Nombre y Apellido:</label>
+                        <input type="text" id="nombre" class="formInput">
+                        <label for="email" class="formLabel">Email:</label>
+                        <input type="email" id="email" class="formInput">
+                        <label for="mensaje" class="formLabel">Déjanos tu mensaje:</label>
+                        <textarea rows="3" id="mensaje" placeholder="Escribe aquí..." class="formTextarea"></textarea>
+                        <input type="submit" value="Enviar" id="send">
+                    </fieldset>
+                </form>
+            </article>
+
+            <article class="contactInfo whiteBackground">
+                <h3 class="contactInfoTitle">Información de contacto</h3>
+                <div class="contactInfoRow">
+                    <img src="../images/telephone.svg" alt="Icono Teléfono" class="icon">
+                    <p>+11 2643 777</p>
+                </div>
+                <div class="contactInfoRow">
+                    <img src="../images/email.svg" alt="Icono Email" class="icon">
+                    <p>contacto@taytay.com</p>
+                </div>
+                <div class="contactInfoRow socials">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram" class="icon"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../images/youtube.svg" alt="YouTube" class="icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="../images/twitter.svg" alt="Twitter" class="icon"></a>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>SwiftWeb</h3>
+        </div>
+        <div class="footer-right">
+            <ul class="social-links">
+                <li><a href="https://facebook.com/tupagina" target="_blank"><img src="ruta/a/tu/imagen/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://instagram.com/tupagina" target="_blank"><img src="ruta/a/tu/imagen/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://twitter.com/tupagina" target="_blank"><img src="ruta/a/tu/imagen/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
