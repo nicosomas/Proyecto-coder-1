@@ -80,3 +80,7 @@ p{
     height: 500px; 
     object-fit: cover; 
 }
+
+.footer-right{
+    position: absolute ; right: -10;
+}
