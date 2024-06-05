@@ -6,6 +6,31 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 5px;
+    }
+
+    .nav-menu {
+        display: none; /
+    }
+
+    .mobile-menu {
+        display: block; 
+    }
+}
+
 h1{ color: #031926;
     text-align: center;
 }
@@ -35,6 +60,9 @@ h5{
     font-style: oblique;
 }
 
+img{
+    max-width: 100%;
+}
 
 .navbar-toggler{
     color: #dbcb37;
