@@ -1,86 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@charset "UTF-8";
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #cccccc;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Poppins", sans-serif;
+  background-color: #F9F9E0;
+  font-weight: 500;
+  font-style: normal;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-}
-@media only screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-    
-    .container {
-        padding: 5px;
-    }
-
-    .nav-menu {
-        display: none; /
-    }
-
-    .mobile-menu {
-        display: block; 
-    }
-}
-
-h1{ color: #031926;
-    text-align: center;
-}
-header {
-    background-color: #ececec;
-    position:sticky;
-    padding: 30px;
-    top: 0px;
-    z-index: 10;
-}
-.navbar {
-    --bs-navbar-active-color: #d2c4bc;
-    --bs-navbar-brand-color: #d2c4bc;
-}
-footer{
-    background-color: #555553;
-}
-
-ion-icon {
-font-size: 30px;
+h1 {
+  color: #031926;
+  text-align: center;
 }
 
 h2 {
-text-align: center;
-}
-h5{
-    font-style: oblique;
+  text-align: center;
 }
 
-img{
-    max-width: 100%;
+h5 {
+  font-style: oblique;
 }
 
-.navbar-toggler{
-    color: #dbcb37;
-    background-color: #e5e48766;
+p {
+  margin-top: 10px;
 }
-p{
-    margin-top: 10px;
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #FF9EAA;
+  position: sticky;
+  padding: 30px;
+  top: 0px;
+  z-index: 10;
+}
+
+footer {
+  background-color: #FF9EAA;
+}
+
+.footer-right {
+  position: absolute;
+  right: -10;
+}
+
+.navbar {
+  --bs-navbar-active-color: $navbar-active-color;
+  --bs-navbar-brand-color: $navbar-brand-color;
+}
+
+.navbar-toggler {
+  color: #dbcb37;
+  background-color: rgba(229, 228, 135, 0.4);
 }
 
 .card {
-    --bs-card-bg:#6c757d66;
+  --bs-card-bg: $card-bg;
 }
 
 .carousel-inner img {
-    height: 500px; 
-    object-fit: cover; 
+  height: 375px;
+  object-fit: cover;
 }
 
-.footer-right{
-    position: absolute ; right: -10;
+ion-icon {
+  font-size: 30px;
 }
+
+.product-1 {
+  transition: transform 0.3s ease; /* Aplicar una transición suave */
+}
+.product-1:hover {
+  transform: scale(1.1); /* Aumentar el tamaño de la imagen en un 10% al hacer hover */
+}
+
+.product-content {
+  display: flex;
+  justify-content: flex-start; /* Ajusta esto según cómo quieras alinear las imágenes */
+  align-items: center; /* Alinea verticalmente las imágenes si es necesario */
+  gap: 10px; /* Espacio entre las imágenes */
+  max-width: 100%;
+}
+.product-content .product-1 {
+  max-width: 100%; /* Asegura que las imágenes no se desborden */
+  height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 5px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Cambia la dirección a columna para dispositivos móviles */
+    align-items: stretch; /* Ajusta el alineado vertical para estirar las imágenes */
+  }
+  .image-container .product-1 {
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Mantiene la proporción de las imágenes */
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

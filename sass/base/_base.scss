@@ -1,0 +1,28 @@
+// _base.scss
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    font-weight: $font-weight;
+    font-style: normal;
+  }
+  
+  h1 {
+    color: #031926;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  h5 {
+    font-style: oblique;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+  }

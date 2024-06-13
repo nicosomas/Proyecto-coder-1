@@ -1,0 +1,11 @@
+// _navbar.scss
+.navbar {
+    --bs-navbar-active-color: $navbar-active-color;
+    --bs-navbar-brand-color: $navbar-brand-color;
+  }
+  
+  .navbar-toggler {
+    color: $navbar-toggler-color;
+    background-color: $navbar-toggler-background;
+  }
+  

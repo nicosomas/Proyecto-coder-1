@@ -1,0 +1,36 @@
+// _media-queries.scss
+@include respond-to('large') {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  @include respond-to('small') {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 5px;
+    }
+  
+    .nav-menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Cambia la dirección a columna para dispositivos móviles */
+        align-items: stretch; /* Ajusta el alineado vertical para estirar las imágenes */
+        
+        .product-1 {
+            max-width: 100%; /* Asegura que las imágenes no se desborden */
+            height: auto; /* Mantiene la proporción de las imágenes */
+        }
+    }
+}
