@@ -44,6 +44,37 @@ footer {
   right: -10;
 }
 
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  color: #555;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+.footer .footer-left {
+  float: left;
+}
+.footer .footer-right {
+  float: right;
+}
+.footer .footer-right .social-links {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-right .social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer .footer-right .social-links li a {
+  color: #555;
+  font-size: 20px;
+}
+.footer .footer-right .social-links li a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
 .navbar {
   --bs-navbar-active-color: $navbar-active-color;
   --bs-navbar-brand-color: $navbar-brand-color;
@@ -70,7 +101,6 @@ ion-icon {
 .product-1 {
   transition: transform 0.3s ease; /* Aplicar una transición suave */
 }
-
 .product-1:hover {
   transform: scale(1.1); /* Aumentar el tamaño de la imagen en un 10% al hacer hover */
 }
@@ -82,7 +112,6 @@ ion-icon {
   gap: 10px; /* Espacio entre las imágenes */
   max-width: 100%;
 }
-
 .product-content .product-1 {
   max-width: 100%; /* Asegura que las imágenes no se desborden */
   height: auto; /* Mantiene la proporción de las imágenes */
@@ -118,6 +147,5 @@ ion-icon {
     height: auto; /* Mantiene la proporción de las imágenes */
   }
 }
-
 
 /*# sourceMappingURL=main.css.map */

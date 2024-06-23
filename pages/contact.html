@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwiftWeb</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="Do you have any questions or do you want to talk to us? Complete the form and we will contact you">
     <link rel="stylesheet" href="../css/styles.css">
@@ -47,48 +47,72 @@
                 Complete the form and we will contact you
             </h2>
         </section>
-        <section class="formSection">
-            <article>
-                <form action="#">
-                    <fieldset class="contactForm whiteBackground">
-                        <label for="nombre" class="formLabel">Nombre y Apellido:</label>
-                        <input type="text" id="nombre" class="formInput">
-                        <label for="email" class="formLabel">Email:</label>
-                        <input type="email" id="email" class="formInput">
-                        <label for="mensaje" class="formLabel">Déjanos tu mensaje:</label>
-                        <textarea rows="3" id="mensaje" placeholder="Escribe aquí..." class="formTextarea"></textarea>
-                        <input type="submit" value="Enviar" id="send">
-                    </fieldset>
-                </form>
-            </article>
-
-            <article class="contactInfo whiteBackground">
-                <h3 class="contactInfoTitle">Información de contacto</h3>
-                <div class="contactInfoRow">
-                    <img src="../images/telephone.svg" alt="Icono Teléfono" class="icon">
-                    <p>+11 2643 777</p>
-                </div>
-                <div class="contactInfoRow">
-                    <img src="../images/email.svg" alt="Icono Email" class="icon">
-                    <p>contacto@taytay.com</p>
-                </div>                
-            </div>
-        </article>
+        <div class="row">
+            <section class="formSection">
+                <article>
+                    <form action="#">
+                        <fieldset class="contactForm whiteBackground">
+                            <label for="nombre" class="formLabel">Nombre y Apellido:</label>
+                            <input type="text" id="nombre" class="formInput">
+                            <label for="email" class="formLabel">Email:</label>
+                            <input type="email" id="email" class="formInput">
+                            <label for="mensaje" class="formLabel">Déjanos tu mensaje:</label>
+                            <textarea rows="3" id="mensaje" placeholder="Escribe aquí..." class="formTextarea"></textarea>
+                            <input type="submit" value="Enviar" id="send">
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </div>
     </section>
     
-    <footer class="footer">
-        <div class="footer-left">
-            <h3>SwiftWeb</h3>
+    <footer class="text-center text-lg-start">
+        <div class="container p-4 pb-0">
+            <section>
+                
+                <div class="row">
+                   
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            SwiftWeb
+                        </h6>
+                        <p>
+                            Enjoy our content full with passion and dont forget to visit our store
+                        </p>
+                        <hr class="w-100 clearfix d-md-none" />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fa-solid fa-phone"></i> Argentina</p>
+                        <p><i class="fas fa-envelope mr-3"></i> swiftweb@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + xxxxxx</p>
+                        <p><i class="fas fa-print mr-3"></i> + xxxxxxx</p>
+                        <hr class="w-100 clearfix d-md-none" />
+                    </div>
+                    
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Social Networks</h6>
+                       
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #797c83" href="https://www.facebook.com/home.php"
+                            role="button"><i class="fab fa-facebook-f"></i></a>
+                      
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #a8a8a8" href="https://x.com/?lang=es"
+                            role="button"><i class="fab fa-twitter"></i></a>
+                      
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #b7b9b9" href="https://www.google.com/"
+                            role="button"><i class="fab fa-google"></i></a>
+                       
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #5f5f5f" href="https://www.instagram.com/"
+                            role="button"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="footer-right">
-            <ul class="social-links">
-                <li><a href="https://facebook.com/tupagina" target="_blank" class="icono-facebook"><i class="fa-brands fa-square-facebook"></i></li>
-                    <li><a href="https://instagram.com/tupagina" target="_blank" class="icon-instagram"><i class="fa-brands fa-square-instagram"></i></li>
-                    <li><a href="https://twitter.com/tupagina" target="_blank" class="icon-twitter"><i class="fa-brands fa-x-twitter"></i></li>
-            </ul>
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"><p>
+            © 2024 Copyright:</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
